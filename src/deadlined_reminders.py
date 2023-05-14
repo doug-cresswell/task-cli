@@ -23,7 +23,7 @@ class DeadlinedReminder(Iterable, ABC):
             return any (attr in SuperClass.__dict__ for SuperClass in subclass.__mro__)
 
         required_methods = ("__iter__", "is_due")
-        if not all(attr_in_hierarchy(attr)) for attr in required_methods:
+        if not all(attr_in_hierarchy(attr) for attr in required_methods):
             return NotImplemented
 
         return True
