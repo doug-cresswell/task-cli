@@ -1,0 +1,10 @@
+name: task-cli
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - pytest=6.2.3
+  - python-dateutil=2.8.1
+  - pytest-json-report=1.2.1
